@@ -3,7 +3,7 @@ from pdfminer.high_level import extract_text
 import streamlit as st
 #make dark theme default
 
-openai.api_key = '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'
+openai.api_key = st.secrets['OpenAI']
 
 def extract_text_from_pdf(pdf_path):
     text = extract_text(pdf_path)
