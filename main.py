@@ -4,7 +4,7 @@ import streamlit as st
 #make dark theme default
 
 openai.api_key = st.secrets['OpenAI']
-
+print(st.secrets['OpenAI'])
 def extract_text_from_pdf(pdf_path):
     text = extract_text(pdf_path)
     return text
